@@ -2041,7 +2041,7 @@
 		display: block;
 		float: left;
 		margin-right: -2em;
-		opacity: 0.8;
+		opacity: 0;
 		width: 1em;
 		z-index: -1;
 	}
@@ -2631,10 +2631,10 @@
 			button.next:after,
 			.button.next:before,
 			.button.next:after {
-				-moz-transition: opacity 0.8s ease-in-out;
-				-webkit-transition: opacity 0.8s ease-in-out;
-				-ms-transition: opacity 0.8s ease-in-out;
-				transition: opacity 0.8s ease-in-out;
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
 				background-position: center right;
 				background-repeat: no-repeat;
 				background-size: 36px 24px;
@@ -2662,7 +2662,7 @@
 			button.next:after,
 			.button.next:after {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
-				opacity: 0.8;
+				opacity: 0;
 				z-index: 1;
 			}
 
@@ -2735,7 +2735,7 @@
 			-ms-pointer-events: none;
 			pointer-events: none;
 			cursor: default;
-			opacity: 0.8;
+			opacity: 0.25;
 		}
 
 /* Tiles */
@@ -2765,10 +2765,10 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			-moz-transition: -moz-transform 0.25s ease, opacity 0.8s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
-			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.8s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
-			-ms-transition: -ms-transform 0.25s ease, opacity 0.8s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
-			transition: transform 0.25s ease, opacity 0.8s ease, filter 1s ease, -webkit-filter 1s ease;
+			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
 			padding: 4em 4em 2em 4em ;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -2810,16 +2810,16 @@
 			}
 
 			.tiles article:before {
-				-moz-transition: opacity 0.8s ease;
-				-webkit-transition: opacity 0.8s ease;
-				-ms-transition: opacity 0.8s ease;
-				transition: opacity 0.8s ease;
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
 				bottom: 0;
 				content: '';
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.8;
+				opacity: 0.85;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2838,7 +2838,7 @@
 			}
 
 			.tiles article:hover:before {
-				opacity: 0.8;
+				opacity: 0;
 			}
 
 			.tiles article.is-transitioning {
@@ -2850,7 +2850,7 @@
 				-webkit-filter: blur(0.5em);
 				-ms-filter: blur(0.5em);
 				filter: blur(0.5em);
-				opacity: 0.8;
+				opacity: 0;
 			}
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
@@ -2989,7 +2989,7 @@
 					display: block;
 					height: 100%;
 					left: 0;
-					opacity: 0.8;
+					opacity: 0;
 					position: absolute;
 					top: 0;
 					width: 100%;
@@ -3091,7 +3091,7 @@
 	@-moz-keyframes reveal-header {
 		0% {
 			top: -4em;
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		100% {
@@ -3103,7 +3103,7 @@
 	@-webkit-keyframes reveal-header {
 		0% {
 			top: -4em;
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		100% {
@@ -3115,7 +3115,7 @@
 	@-ms-keyframes reveal-header {
 		0% {
 			top: -4em;
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		100% {
@@ -3127,7 +3127,7 @@
 	@keyframes reveal-header {
 		0% {
 			top: -4em;
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		100% {
@@ -3239,12 +3239,12 @@
 					}
 
 					#header nav a[href="#menu"]:after {
-						-moz-transition: opacity 0.82s ease-in-out;
-						-webkit-transition: opacity 0.82s ease-in-out;
-						-ms-transition: opacity 0.82s ease-in-out;
-						transition: opacity 0.82s ease-in-out;
+						-moz-transition: opacity 0.2s ease-in-out;
+						-webkit-transition: opacity 0.2s ease-in-out;
+						-ms-transition: opacity 0.2s ease-in-out;
+						transition: opacity 0.2s ease-in-out;
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
-						opacity: 0.8;
+						opacity: 0;
 						z-index: 1;
 					}
 
@@ -3310,7 +3310,7 @@
 			}
 
 		body.is-loading #header.alt {
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3557,7 +3557,7 @@
 			-webkit-transform: translateX(-0.5em);
 			-ms-transform: translateX(-0.5em);
 			transform: translateX(-0.5em);
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3773,15 +3773,15 @@
 /* Wrapper */
 
 	#wrapper {
-		-moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.8375s ease-out;
-		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.8375s ease-out;
-		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.8375s ease-out;
-		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.8375s ease-out;
+		-moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
 	}
 
 		#wrapper.is-transitioning {
-			opacity: 0.8;
+			opacity: 0;
 		}
 
 		#wrapper > * > .inner {
@@ -3811,10 +3811,10 @@
 /* Menu */
 
 	#menu {
-		-moz-transition: -moz-transform 0.35s ease, opacity 0.835s ease, visibility 0.35s;
-		-webkit-transition: -webkit-transform 0.35s ease, opacity 0.835s ease, visibility 0.35s;
-		-ms-transition: -ms-transform 0.35s ease, opacity 0.835s ease, visibility 0.35s;
-		transition: transform 0.35s ease, opacity 0.835s ease, visibility 0.35s;
+		-moz-transition: -moz-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		-webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		-ms-transition: -ms-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3835,7 +3835,7 @@
 		box-shadow: none;
 		height: 100%;
 		left: 0;
-		opacity: 0.8;
+		opacity: 0;
 		overflow: hidden;
 		padding: 3em 2em;
 		position: fixed;
@@ -3846,10 +3846,10 @@
 	}
 
 		#menu .inner {
-			-moz-transition: -moz-transform 0.35s ease-out, opacity 0.835s ease, visibility 0.35s;
-			-webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.835s ease, visibility 0.35s;
-			-ms-transition: -ms-transform 0.35s ease-out, opacity 0.835s ease, visibility 0.35s;
-			transition: transform 0.35s ease-out, opacity 0.835s ease, visibility 0.35s;
+			-moz-transition: -moz-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+			-webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+			-ms-transition: -ms-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+			transition: transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
 			-moz-transform: rotateX(20deg);
 			-webkit-transform: rotateX(20deg);
 			-ms-transform: rotateX(20deg);
@@ -3857,7 +3857,7 @@
 			-webkit-overflow-scrolling: touch;
 			max-width: 100%;
 			max-height: 100vh;
-			opacity: 0.8;
+			opacity: 0;
 			overflow: auto;
 			text-align: center;
 			visibility: hidden;
@@ -3930,10 +3930,10 @@
 		}
 
 			#menu .close:before, #menu .close:after {
-				-moz-transition: opacity 0.82s ease-in-out;
-				-webkit-transition: opacity 0.82s ease-in-out;
-				-ms-transition: opacity 0.82s ease-in-out;
-				transition: opacity 0.82s ease-in-out;
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
 				background-position: center;
 				background-repeat: no-repeat;
 				content: '';
@@ -3951,7 +3951,7 @@
 
 			#menu .close:after {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
-				opacity: 0.8;
+				opacity: 0;
 			}
 
 			#menu .close:hover:after, #menu .close:active:after {
